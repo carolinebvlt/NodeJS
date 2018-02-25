@@ -1,23 +1,18 @@
 [
   {
-    "id" : 0,
-    "question": "IKNOW",
-    "answers": [{"answer" : "hello", "nextId" : 0}]
-  },
-  {
     "id" : 1,
     "question" : "Why do you want to learn programming ?",
     "answers" : [
       {
-        "answer" : "I don't know, just pick one for me",
-        "nextId" : 0
+        "answer" : "I don't know, just pick one language for me",
+        "nextId" : "Python"
       },
       {
         "answer" : "Just for fun",
         "nextId" : 2
       },
       {
-        "answer" : "I'm interested",
+        "answer" : "I'm interested/curious",
         "nextId" : 2
       },
       {
@@ -25,12 +20,12 @@
         "nextId" : 2
       },
       {
-        "answer" : "Make money",
+        "answer" : "Make money / Find a job",
         "nextId" : 3
       },
       {
         "answer" : "For kids",
-        "nextId" : 0
+        "nextId" : "Scratch"
       }
     ]
   },
@@ -80,7 +75,7 @@
       },
       {
         "answer" : "3D/Gaming",
-        "nextId" : 0
+        "nextId" : "C++"
       }
     ]
   },
@@ -90,15 +85,157 @@
     "answers" : [
       {
         "answer" : "The easy way",
-        "nextId" : 0
+        "nextId" : "Python"
       },
       {
         "answer" : "The best way",
-        "nextId" : 0
+        "nextId" : "Python"
       },
       {
         "answer" : "The slightly harder way",
         "nextId" : 10
+      }
+    ]
+  },
+  {
+    "id" : 6,
+    "question" : "Which platform/field ?",
+    "answers" : [
+      {
+        "answer" : "Web",
+        "nextId" : 11
+      },
+      {
+        "answer" : "Mobile",
+        "nextId" : 9
+      },
+      {
+        "answer" : "Entreprise",
+        "nextId" : 8
+      },
+      {
+        "answer" : "3D/Gaming",
+        "nextId" : "C++"
+      }
+    ]
+  },
+  {
+    "id" : 7,
+    "question" : "Do you need to share information in real-time (ex: Twitter) ?",
+    "answers" : [
+      {
+        "answer" : "Yes",
+        "nextId" : "JavaScript"
+      },
+      {
+        "answer" : "No",
+        "nextId" : 12
+      }
+    ]
+  },
+  {
+    "id" : 8,
+    "question" : "What do you think about Microsoft ?",
+    "answers" : [
+      {
+        "answer" : ":-)",
+        "nextId" : "C#"
+      },
+      {
+        "answer" : ":-|",
+        "nextId": "Java"
+      },
+      {
+        "answer" : ":-(",
+        "nextId" : "Java"
+      }
+    ]
+  },
+  {
+    "id" : 9,
+    "question" : "Which OS ?",
+    "answers" : [
+      {
+        "answer" : "IOS",
+        "nextId" : "Objective-C"
+      },
+      {
+        "answer" : "Android",
+        "nextId" : "Java"
+      }
+    ]
+  },
+  {
+    "id" : 10,
+    "question" : "Auto or manual car ?",
+    "answers" : [
+      {
+        "answer" : "Auto",
+        "nextId" : "Java"
+      },
+      {
+        "answer" : "Manual",
+        "nextId" : "C"
+      }
+    ]
+  },
+  {
+    "id" : 11,
+    "question" : "Frontend or Backend ?",
+    "answers" : [
+      {
+        "answer" : "Frontend",
+        "nextId" : "JavaScript"
+      },
+      {
+        "answer" : "Backend",
+        "nextId" : 14
+      }
+    ]
+  },
+  {
+    "id" : 12,
+    "question" : "Do you wanna try something with hudge potential, but less mature ?",
+    "answers" : [
+      {
+        "answer" : "Yes",
+        "nextId" : "JavaScript"
+      },
+      {
+        "answer" : "No",
+        "nextId" : 13
+      }
+    ]
+  },
+  {
+    "id" : 13,
+    "question" : "Wich one is your favorite toy ?",
+    "answers" : [
+      {
+        "answer" : "Lego",
+        "nextId" : "Python"
+      },
+      {
+        "answer" : "Play-Doh",
+        "nextId" : "Ruby"
+      },
+      {
+        "answer" : "I've an old and ugly toy, but I love it!",
+        "nextId" : "PHP"
+      }
+    ]
+  },
+  {
+    "id" : 14,
+    "question" : "I want to work for...",
+    "answers" : [
+      {
+        "answer" : "Startup",
+        "nextId" : 12
+      },
+      {
+        "answer" : "Corporate",
+        "nextId" : 8
       }
     ]
   }

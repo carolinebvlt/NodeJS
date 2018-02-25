@@ -22,9 +22,19 @@ app.get('/test/getQuestion/:id', function(rq, rs){
     });
     rs.render('test.ejs', {question: Question.question, answers:Question.answers});
 });
-app.post('/test/getNext', urlencodedParser, function(rq, rs){ 
+app.get('/result/:language', function(rq, rs){
+    rs.render('home.ejs');
+});
+app.post('/test/getNext', urlencodedParser, function(rq, rs){
   nextQuestion = rq.body.theAnswer; // retourne le nextId
-  rs.redirect('/test/getQuestion/'+nextQuestion);
+  switch (nextQuestion) {
+    case "Python": case "C": case "C++": case "C#": case "Java": case "JavaScript": case "PHP": case "Ruby": case "Scratch": case "Objective-C":
+      rs.render('result.ejs', {language:nextQuestion});
+      break;
+    default:
+      rs.redirect('/test/getQuestion/'+ nextQuestion);
+      break;
+  }
 });
 
 
