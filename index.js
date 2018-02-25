@@ -22,9 +22,6 @@ app.get('/test/getQuestion/:id', function(rq, rs){
     });
     rs.render('test.ejs', {question: Question.question, answers:Question.answers});
 });
-app.get('/result/:language', function(rq, rs){
-    rs.render('home.ejs');
-});
 app.post('/test/getNext', urlencodedParser, function(rq, rs){
   nextQuestion = rq.body.theAnswer; // retourne le nextId
   switch (nextQuestion) {
