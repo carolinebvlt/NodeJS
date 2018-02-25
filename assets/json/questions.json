@@ -1,0 +1,100 @@
+[
+  {
+    "id" : 1,
+    "question" : "Why do you want to learn programming ?",
+    "answers" : [
+      {
+        "anwser" : "I don't know, just pick one for me",
+        "nextId" : 0
+      },
+      {
+        "anwser" : "Just for fun",
+        "nextId" : 2
+      },
+      {
+        "anwser" : "I'm interested",
+        "nextId" : 2
+      },
+      {
+        "anwser" : "Improve myself",
+        "nextId" : 2
+      },
+      {
+        "anwser" : "Make money",
+        "nextId" : 3
+      },
+      {
+        "anwser" : "For kids",
+        "nextId" : 0
+      }
+    ]
+  },
+  {
+    "id" : 2,
+    "question" : "Have a brilliant idea/platform in mind ?",
+    "answers" : [
+      {
+        "anwser" : "Yes",
+        "nextId" : 4
+      },
+      {
+        "answer" : "No",
+        "nextId" : 5
+      }
+    ]
+  },
+  {
+    "id" : 3,
+    "question" : "Choose",
+    "answers" : [
+      {
+        "answer" : "Get a job",
+        "nextId" : 6
+      },
+      {
+        "answer" : "I have a startup idea !",
+        "nextId" : 4
+      }
+    ]
+  },
+  {
+    "id" : 4,
+    "question" : "Which platform/fiel ?",
+    "answers" : [
+      {
+        "answer" : "Web",
+        "nextId" : 7
+      },
+      {
+        "answer" : "Entreprise",
+        "nextId" : 8
+      },
+      {
+        "answer" : "Mobile",
+        "nextId" : 9
+      },
+      {
+        "anwser" : "3D/Gaming",
+        "nextId" : 0
+      }
+    ]
+  },
+  {
+    "id" : 5,
+    "question" : "I prefere to learn things...",
+    "answers" : [
+      {
+        "answer" : "The easy way",
+        "nextId" : 0
+      },
+      {
+        "answer" : "The best way",
+        "nextId" : 0
+      },
+      {
+        "answer" : "The slightly harder way",
+        "nextId" : 10
+      }
+    ]
+  }
+]

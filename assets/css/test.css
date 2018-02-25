@@ -1,0 +1,31 @@
+.test{
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+  border: solid black 1px;
+  margin-top: 20vh;
+  padding: 30px;
+}
+h2{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+#answers{
+  margin: auto;
+  text-align: center;
+}
+#submitAnswer{
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  color: blue;
+}
+#submitAnswer:hover{
+  color: black;
+  border: inset;
+  cursor: pointer;
+}

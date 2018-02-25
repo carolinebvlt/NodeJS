@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/test.css">
+  <title>Le test</title>
+</head>
+<body>
+  <div class="test">
+    <h2 id="question">
+      <%= question %>
+    </h2>
+    <form action="/test/getNext/" method="post">
+      <section id="answers">
+        <% answers.forEach(function(a){ %>
+          <li> <%= a.anwser %></li>
+      <% }); %>
+      </section>
+      <input id="submitAnswer" type="submit" name="submitAnswer" value="Valider"/>
+    </form>
+  </div>
+
+</body>
+</html>
