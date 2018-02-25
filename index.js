@@ -14,19 +14,17 @@ app.get('/test/getQuestion/:id', function(rq, rs){
 
     var content = fs.readFileSync('assets/json/questions.json');
     var data = JSON.parse(content);
-    console.log(data);
-    console.log('**********');
     var Question;
     data.forEach(function(Q){
       if(Q.id == rq.params.id){
         Question = Q;
       }
     });
-    // console.log(Question.answers);
     rs.render('test.ejs', {question: Question.question, answers:Question.answers});
 });
-app.post('/test/getNext/:id', function(rq, rs){ // traite la réponse$
-  res.redirect('/test/getQuestion/:id');
+app.post('/test/getNext', urlencodedParser, function(rq, rs){ // traite la réponse$
+  nextQuestion = rq.body.theAnswer; // retourne le nextId
+  rs.redirect('/test/getQuestion/'+nextQuestion);
 });
 
 

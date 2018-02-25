@@ -14,8 +14,8 @@
     </h2>
     <form action="/test/getNext/" method="post">
       <section id="answers">
-        <% answers.forEach(function(a){ %>
-          <li> <%= a.anwser %></li>
+      <% answers.forEach(function(a, index){ %>
+        <input type="radio" name="theAnswer" value="<%= a.nextId %>" />  <%= a.answer %> <br/>
       <% }); %>
       </section>
       <input id="submitAnswer" type="submit" name="submitAnswer" value="Valider"/>
