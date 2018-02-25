@@ -22,7 +22,7 @@ app.get('/test/getQuestion/:id', function(rq, rs){
     });
     rs.render('test.ejs', {question: Question.question, answers:Question.answers});
 });
-app.post('/test/getNext', urlencodedParser, function(rq, rs){ // traite la réponse$
+app.post('/test/getNext', urlencodedParser, function(rq, rs){ 
   nextQuestion = rq.body.theAnswer; // retourne le nextId
   rs.redirect('/test/getQuestion/'+nextQuestion);
 });
