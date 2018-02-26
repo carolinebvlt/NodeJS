@@ -33,6 +33,4 @@ app.post('/test/getNext', urlencodedParser, function(rq, rs){
       break;
   }
 });
-
-
 server.listen(7000);

@@ -18,7 +18,3 @@
       * marché
       * long terme
       * difficulté apprentissage
-
-## Challenge supplémentaire
-
-  * faire un module pour générer facilement ce type de questionnaire (générer plus facilement le fichier json)
