@@ -1,3 +1,6 @@
+body{
+    background-color: #bfffc1;
+}
 .test{
   width: 50%;
   height: 50vh;
@@ -10,10 +13,17 @@ h2{
   text-align: center;
   margin: 0;
   margin-bottom: 40px;
+  font-family: 'Krona One', sans-serif;
+  margin-top: 20px;
 }
+
 #answers{
   margin: auto;
-  text-align: center;
+  text-align: left;
+  margin-left: 25%;
+  font-family: 'Mukta Malar', sans-serif;
+  font-size: 1.3em;
+  line-height: 40px;
 }
 #submitAnswer{
   display: block;
@@ -22,7 +32,9 @@ h2{
   padding: 10px;
   font-size: 1.1em;
   border-radius: 5px;
-  color: blue;
+  font-weight: bold;
+  color: #00a005;
+  border-color: #00a005;
 }
 #submitAnswer:hover{
   color: black;

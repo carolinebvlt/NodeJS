@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/test.css">
+  <link href="https://fonts.googleapis.com/css?family=Krona+One|Mukta+Malar" rel="stylesheet">
   <title>Le test</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <form action="/test/getNext/" method="post">
       <section id="answers">
       <% answers.forEach(function(a, index){ %>
-        <input type="radio" name="theAnswer" value="<%= a.nextId %>" />  <%= a.answer %> <br/>
+        <input class="radio" type="radio" name="theAnswer" value="<%= a.nextId %>" />  <%= a.answer %> <br/>
       <% }); %>
       </section>
       <input id="submitAnswer" type="submit" name="submitAnswer" value="Valider"/>
